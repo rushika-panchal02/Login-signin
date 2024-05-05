@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    /*background-image: linear-gradient(rgb(137, 73, 255),rgb(48, 0, 77));
+   
+    background: url('image.png')no-repeat;*/
+     background-image: url('https://wallpapercave.com/wp/wp10842750.jpg');
+
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay{
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.box,.overlay{
+    top: 50%;
+    border-radius: 2rem 2rem 0 0;
+    left: 50%;
+    transform: translate(120%,10%);
+    width: 30%;
+}
+
+.box{
+    border: 0.1rem solid gray;
+    justify-content: space-between;
+    padding: 2rem;
+    z-index: 1;
+    color: white;
+    border-bottom: 2rem solid white;
+}
+
+.heading{
+    padding: 1rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.form{
+    justify-content: space-between;
+    height: 23rem;
+}
+
+input{
+    height: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: none;
+    border-bottom: #20665f 0.4rem solid;
+}
+
+input:focus{
+    transition: all 1s;
+    border-bottom: rgba(0, 196, 137, 0.884) 0.4rem solid;
+}
+
+button{
+    background-color:#20665f;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 2rem;
+    width: 7rem;
+    padding: 0.2rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover{
+    transition: all 0.3s;
+    background-color: rgba(0, 196, 137, 0.884);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #20665f;
+}
+
+.no-account div a{
+    color: gray;
+    text-decoration: none;
+}
+
+.invalid-warning{
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: red;
+    margin-top: 0.4rem;
+}
+
+.invalid-info,.invalid-info:focus,.invalid-info:hover{
+    border-bottom: red 0.4rem solid;
+}
+
+.sucess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 0.3rem solid gray;
+    font-size: 80px;
+    color: white;
+  }

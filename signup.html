@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="box flex-col">
+        <div class="heading">SIGN UP</div>
+        <form id="form" action="" class="form flex-col">
+            <div class="name flex-col">
+                <input id="name" type="text" placeholder="Name"/>
+                <div id="no-name" class="invalid-warning hidden">Enter Name</div>
+                 
+            </div>
+            <div class="email flex-col">
+                <input id="email" type="email" placeholder="Email"/>
+                <div id="no-email" class="invalid-warning hidden">Enter Email</div>
+                <div id="email-exists" class="invalid-warning hidden">Email Exists</div>
+            </div>
+            <div class="password flex-col">
+                <input id="password" type="password" placeholder="Password"/>
+                <div id="no-password" class="invalid-warning hidden">Enter Password</div>
+            </div>
+            <button type="submit">SIGN UP</button>
+            <div class="no-account flex-col">
+                <a href="login.html">
+                    <button type="button">LOGIN</button>
+                </a>
+
+        
+            <div><a href="login.html"> Already have a account ?</a></div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>

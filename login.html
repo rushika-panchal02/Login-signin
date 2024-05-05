@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="box flex-col">
+        <div class="heading">LOGIN</div>
+        <form id="form" action="" class="form flex-col">
+            <div class="email flex-col">
+                <input id="email" type="email" placeholder="Email"/>
+                <div id="no-email" class="invalid-warning hidden">Enter Email</div>
+                <div id="email-not-exists" class="invalid-warning hidden">Email does not Exists</div>
+            </div>
+            <div class="password flex-col">
+                <input id="password" type="password" placeholder="Password"/>
+                <div id="no-password" class="invalid-warning hidden">Enter Password</div>
+                <div id="invalid-password" class="invalid-warning hidden">invalid password</div>
+            </div>
+            <button type="submit">LOGIN</button>
+            <div class="no-account flex-col">
+                <a href="signup.html">
+                    <button type="button">SIGN UP</button>
+                </a>
+            <div><a href="signup.html"> Do not have a account ? </a></div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
